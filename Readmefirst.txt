@@ -1,14 +1,11 @@
-The background is not working when kept in CSS so i kepet in Header content 
+If the background is nice or wanted to change in css file in place of background then url check image 2 folders i downloaded free backgrounds 
 
-due to which menue is missing 
+Need to fix contact us form to sales@bakebub.com tried but it is asking me to login to godaddy email account which is incorrect i think we need to add a record and cname for email too .
 
-example 
-    </div>
-    <div class="header-content">
-      <h2>Delicious, Freshly Baked Goods</h2>
-      <p>Experience the taste of freshly baked treats with natural ingredients.</p>
-      <a href="#menu" class="btn">Explore Our Menu</a>
-	  <img src="C:\Users\Tinku Sai\OneDrive\Desktop\Bakebub\GIT zip\website-main\images\Background.jpg.jpg" >
-    </div>
+we are able to edit on index html and commit if you want to commit from cli 
 
-also fill up form is giving 504 error need to fix it update your comments 
+make changes first on the page 
+then go to terminal 
+git add index.html
+git push origin main
+git status 
