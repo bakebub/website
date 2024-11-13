@@ -40,14 +40,22 @@ header {
 .navbar ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #f1c40f;
 }
 
 .header-content h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .header-content p {
+  max-width: 600px;
+  margin: auto;
   margin-bottom: 1.5rem;
 }
 
@@ -57,6 +65,12 @@ header {
   color: black;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.header-content .btn:hover {
+  background-color: #d4a60a;
 }
 
 /* Sections */
@@ -68,17 +82,20 @@ section {
 #about p {
   max-width: 600px;
   margin: auto;
+  line-height: 1.8;
 }
 
 .menu-items {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .menu-item {
   width: 30%;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .menu-item img {
@@ -111,6 +128,8 @@ form input, form textarea {
   width: 100%;
   padding: 0.7rem;
   margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 form button {
@@ -120,6 +139,12 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #d4a60a;
 }
 
 /* Footer */
@@ -131,8 +156,43 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .header-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .menu-items, .gallery-container {
     flex-direction: column;
+  }
+
+  .menu-item, .gallery-container img {
+    width: 100%;
+  }
+
+  .header-content h2 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .header-content .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
